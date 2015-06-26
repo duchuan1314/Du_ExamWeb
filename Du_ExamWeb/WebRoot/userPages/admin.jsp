@@ -262,7 +262,7 @@ span i {
 							<td>${user.password }</td>
 							<td><c:if test="${user.type_in==1 }">管理员</c:if> <c:if
 									test="${user.type_in==2 }">普通用户</c:if></td>
-							<td><c:if test="${user.have_in=='1' }">是</c:if><c:if test="${user.have_in=='2' }">否</c:if></td>
+							<td><c:if test="${user.have_in=='2' }">是</c:if><c:if test="${user.have_in=='1' }">否</c:if></td>
 							<td><a href="SearchUserServlet?id=${user.id }">查看</a></td>
 							<td><a
 								href="<%=request.getContextPath() %>/EditUserServlet?id=${user.id}">编辑</a></td>

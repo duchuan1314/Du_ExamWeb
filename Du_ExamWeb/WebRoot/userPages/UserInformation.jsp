@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        <option value="2" <c:if test="${user.type_in==2 }">selected="selected"</c:if>>学生</option>
        </select></td></tr>
         <tr class="success"><td>用户名：</td><td>${user.username} </td></tr>
-        <tr class="info"><td>是否参加考试:</td><td><input type="radio"<c:if test="${user.have_in == '是' }">checked=checked</c:if> disabled/>是&nbsp;<input type="radio" <c:if test="${user.have_in == '否' }">checked=checked</c:if> disabled/>否</td></tr>
+        <tr class="info"><td>是否参加考试:</td><td><input type="radio"<c:if test="${user.have_in == '2' }">checked=checked</c:if> disabled/>是&nbsp;<input type="radio" <c:if test="${user.have_in == '1' }">checked=checked</c:if> disabled/>否</td></tr>
     </table>
     <div class="button"><a href="Listall" class="btn btn-default btn-lg active" role="button">返回主页</a></div>	
   </body>
